@@ -3,11 +3,17 @@ Yelp api, covid api, recipe-nutrition api
 
 (recipe-nutrition api part) Once the user selects a restaurant, the menu of the selected restaurant will be popped up. 
 Then, he/she can pick a dish from the menu. By typing in the name of the dish, the user can get more information regarding the dish. 
-To be specific, we will use a recipe-nutrition api to match the most related recipe with the one the user desired and pull out the nutrition information from the recipe. 
-On the web page, we can show users approximately how many calories will he/she consume by having such a dish. Also, if possible, we will also mark the recommended relatively 
+To be specific, we will use a recipe-nutrition api to match the most related recipe with the one the user desired and pull out the nutrition 
+information from the recipe. On the web page, we can show users approximately how many calories will he/she consume by having such a dish. Also, if possible, we will also mark the recommended relatively 
 healthier dishes to improve users dietary habits.
 
 
 Idea #2:
+
+We hope to create a project that allows a user to search for a song but with added functionality that uses their voice 
+instead of explicitly their keyboard. Using the Spotify API and other various music APIs, we hope to create a project that allows 
+users to retrieve desired information on any song they wish to search. With the abundance of information at our disposal with these
+various free music APIs, we hope this application also provides a user a list of related songs compared to the one they searched for, 
+and even have a feature that allows them to play a snippet of a song to hear a sample. The application will hopefully serve as a one stop shop for all audiophiles to enjoy. 
 
 
