@@ -9,6 +9,7 @@ healthier dishes to improve users dietary habits.
 
 
 Idea #2:
+Spotify API, speech-to-text api, various music APIs
 
 We hope to create a project that allows a user to search for a song but with added functionality that uses their voice 
 instead of explicitly their keyboard. Using the Spotify API and other various music APIs, we hope to create a project that allows 
