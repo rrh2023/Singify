@@ -1,8 +1,9 @@
 Idea #1:
 Yelp api, covid api, recipe-nutrition api 
 
-(recipe-nutrition api part) Once the user selects a restaurant, the menu of the selected restaurant will be popped up. 
-Then, he/she can pick a dish from the menu. By typing in the name of the dish, the user can get more information regarding the dish. 
+We will be using the Yelp API in order for clients to search for any desired food or restaurant in a particular location of their choosing.
+Once the user selects a restaurant, the menu of the selected restaurant will be appear. 
+Then, he/she can pick a dish from the menu. By typing in the name of the dish, the user can get more information regarding the dish using the recipe-nutrition-api. 
 To be specific, we will use a recipe-nutrition api to match the most related recipe with the one the user desired and pull out the nutrition 
 information from the recipe. On the web page, we can show users approximately how many calories will he/she consume by having such a dish. Also, if possible, we will also mark the recommended relatively 
 healthier dishes to improve users dietary habits. In addition, we hope to use a COVID-19 api in order to track safe locations to eat food.
