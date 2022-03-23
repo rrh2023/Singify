@@ -6,9 +6,9 @@ All details below about the project are tentative until the final submission at 
 
 - Annie
 - Wilson
-- Kanishka
 - Araceli
 - Roberto
+- Kanishka
 
 ## Tech Stack
 
@@ -23,3 +23,8 @@ All details below about the project are tentative until the final submission at 
 - SongKick
 - Lyrics.ovh
 - Speach Recognition
+
+## External Resources
+
+- [Brad Traversy's 20 Vanilla Web Projects](https://www.udemy.com/course/web-projects-with-vanilla-javascript/)
+  - Referenced as a guide to implement a couple of the APIs in our application
