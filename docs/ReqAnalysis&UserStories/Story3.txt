@@ -1,0 +1,19 @@
+Favoriting 
+
+    This feature appears at the bottom of the song paster and is shaped 
+like a heart icon. It allows users to click the heart and when clicked
+the heart will turn red. The red heart indicates that you have added the song to favorites.
+
+    The main purpose of adding a favorites feature is that users can keep 
+the songs which they hear very often and like the most with them and don’t 
+have to search them again and again.
+
+    By adding a song to favorites, they will be added to a folder called 
+favorites folder which keeps all the songs the user added to favorites, 
+in the order of the date it was added. The user can play the songs from this 
+playlist, play the entire playlist, unfavorite the song which will remove the song 
+from the favorites. 
+
+    It is easy to use and a very popular/preferred feature for user’s as 
+it keeps their favorite songs at one place and provides them easy access to 
+it. They can even edit the list to keep up with their changing preferences and trends.

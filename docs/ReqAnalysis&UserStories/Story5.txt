@@ -1,0 +1,18 @@
+Providing feedback 
+As a user, I want to be able to provide feedback and make complaints regarding 
+any bugs I encounter while using the app.
+
+Happy Path:
+Users will be able to locate an easily identifiable support section to lodge 
+complaints. A list of categories will be available to select from, so that 
+the user can get the best support possible. There is an option to provide 
+feedback and get support. Support can be with regards to user account information, 
+such as recovering a lost account. 
+
+Unhappy Path:
+The unhappy path is if a user can’t easily navigate through the application and lodge 
+their complaint. Moreover, this may also occur if a user’s concerns are not properly 
+addressed. Certain complaints may require customer service to engage with the user, 
+and this should happen promptly. Holistic complaints such as improvements to the application 
+should also be properly addressed so that users know that the engineering department is taking 
+user feedback into account when designing new features.

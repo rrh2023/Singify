@@ -1,1 +1,18 @@
-A user should be
+Registering	
+
+    In order to use this application, a user must first be able to register with 3rd party authentication, 
+primarily a music related service. This will then allow personalized information about the user to be 
+associated with their account. This leads to the assumption that a user must first make an account with 
+a 3rd party music service prior to using this application. If they attempt to login with an account that 
+is not properly registered, they should be met with an error message.
+
+    In order to register an account, they will be redirected to the 3rd party’s website that will allow them to 
+enter their username and password. This tab should then close and redirect them to this application. A user 
+should be able to login in a similar fashion. A user, despite who they are, will be directed to the same homepage. 
+The page will be minimalist by design and contain several elements. The most significant being a broad search bar 
+that takes up the majority of the page; this is where the user will be able to search for a variety of different 
+pieces of music related information. On the upper-right hand corner of  the web page, the user can click on a few 
+tabs that contain separate web pages that provide information personalized to them and their past use with the 3rd 
+party web service and the application. If a user has a relatively new account with not much information to be displayed, 
+a page should appear for each respective tab detailing this situation. A user can always provide feedback on the app in order 
+to notify developers of any mishaps.
