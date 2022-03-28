@@ -1,14 +1,4 @@
 Searching	
-
-    There should be a broad search bar that appears across the minimalist homepage, 
-and on one of the corners of the search bar, a user can toggle between a variety of 
-options to search: an artist, their songs, song lyrics, or concerts. The user has the 
-option to either speak their search query by pressing an icon that will initiate speech 
-recognition, or they could simply type their search in the search bar. 
-
-    Upon this search query, they should be presented, on the same page, either a list of 
-songs, artists, events that match their search query or a statement that describes a lack 
-of song results. These results will be displayed in a list format that contains a couple of 
-pieces of information related to a particular result/row in this list-like display. In order to 
-have a more in-depth overview of a particular result/row, a user can click on the main title 
-of the row in order to then be directed to a new page.
+As a user I would like to search for a song by speaking or typing in the search bar in order to get more information about the song. After logging in (see user “registering” story), users will find a broad search bar that appears across the minimalist homepage, and on one of the corners of the search bar, a user can toggle between a variety of options to search: an artist, their songs, song lyrics, or concerts. The user has the option to either speak their search query by pressing an icon that will initiate speech recognition, or they could simply type their search in the search bar. 
+Upon this search query, they should be presented, on the same page, either a list of songs, artists, events that match their search query or a statement that describes a lack of song results. These results will be displayed in a list format that contains a couple of pieces of information related to a particular result/row in this list-like display. In order to have a more in-depth overview of a particular result/row, a user can click on the main title of the row in order to then be directed to a new page.
+If a user cannot find a search for what they like, they should be met with a message that states that their particular search did not come up with any results.

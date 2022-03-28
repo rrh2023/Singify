@@ -1,18 +1,3 @@
-Providing feedback 
-As a user, I want to be able to provide feedback and make complaints regarding 
-any bugs I encounter while using the app.
-
-Happy Path:
-Users will be able to locate an easily identifiable support section to lodge 
-complaints. A list of categories will be available to select from, so that 
-the user can get the best support possible. There is an option to provide 
-feedback and get support. Support can be with regards to user account information, 
-such as recovering a lost account. 
-
-Unhappy Path:
-The unhappy path is if a user can’t easily navigate through the application and lodge 
-their complaint. Moreover, this may also occur if a user’s concerns are not properly 
-addressed. Certain complaints may require customer service to engage with the user, 
-and this should happen promptly. Holistic complaints such as improvements to the application 
-should also be properly addressed so that users know that the engineering department is taking 
-user feedback into account when designing new features.
+Socializing
+As a user, I would like to share songs with others in order to grow and nourish relationships. Once users log into this web application (see the user “log in” story) and get the search results (see the user “searching” story), a share button will show up on the search result page. Users can click on the share button, which will then provide them three options/buttons: go to instagram, go to facebook, go to twitter. By clicking on one of them, users will be directed to the “list of contacts” in the corresponding app and the song they want to share will be generated as a sharable link. Then, users can click on one of the contacts, and, as a result, the link will be automatically sent out to the contact along with title of the song and name of the artist. If clicking on the link, they will be directed to the search result page of our website and will be able to listen to the song.
+The Unhappy path is that If after clicking on one of the three buttons that should direct users to social media apps, users may find that nothing happens. Then, users can refresh the page and click on the button again to see if things change. If refreshing still can’t fix the problem, then please provide us feedback (see user “providing feedback” story).
