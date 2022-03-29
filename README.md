@@ -22,7 +22,7 @@ All details below about the project are tentative until the final submission at 
 - Spotify
 - SongKick
 - Lyrics.ovh
-- Speach Recognition
+- Speech Recognition
 
 ## External Resources
 
