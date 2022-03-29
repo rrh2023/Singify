@@ -2,7 +2,7 @@ import React from 'react'
 
 const Events = () => {
   return (
-    <div>Events</div>
+    <h1>I'm the SongKick page!</h1>
   )
 }
 
