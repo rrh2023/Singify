@@ -2,7 +2,7 @@ import React from 'react'
 
 const Testing = () => {
   return (
-    <h1>I'm the testing!</h1>
+    <h1>I'm the Spotify page!</h1>
   )
 }
 

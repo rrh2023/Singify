@@ -2,7 +2,7 @@ import './App.css';
 import {Routes, Route} from "react-router-dom";
 import Navbar from './Components/Navbar'
 import Home from './Components/Home'
-import Testing from './Components/Testing'
+import Spotify from './Components/Spotify'
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route exact path="/" element={<Home/>}/>
-        <Route exact path="/testing" element={<Testing/>}/>
+        <Route exact path="/spotify" element={<Spotify/>}/>
       </Routes>
     </div>
   );
