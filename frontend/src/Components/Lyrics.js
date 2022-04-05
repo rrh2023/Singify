@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
+import SongLyrics from './SongLyrics'
 
 const Lyrics = () => {
-  
   const [term, setTerm] = useState({
     term: ''
   })
@@ -40,6 +40,7 @@ const Lyrics = () => {
 
   }
 
+
   return (
     <div>
       <h1>I'm the Lyrics.vho page!</h1>
@@ -57,13 +58,9 @@ const Lyrics = () => {
         songs.map(
           song => {
             return (
-              <li key={song.id}>
-                <span><strong>{song.artist.name}</strong> - {song.title} </span>
-                <button>Get Lyrics</button>
-              </li>
+              <SongLyrics key={song.id} artist={song.artist.name} songTitle={song.title}/>
             )
           } 
-
         )
       }
     
