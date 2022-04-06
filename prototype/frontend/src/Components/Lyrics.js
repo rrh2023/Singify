@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
-import SongLyrics from './SongLyrics'
+import SongLyrics from './fragments/SongLyrics'
 
 const Lyrics = () => {
+  const [start, setStart] = useState(false);
   const [term, setTerm] = useState({
     term: ''
   })
@@ -11,25 +12,30 @@ const Lyrics = () => {
   const handleChange = (e) => {
 
     const value = e.target.value
-    setTerm(()=> {
+    setTerm(()=> { // search term state updated
       return (
         {
           term: value
         }
       )
     })
-    console.log(term.term)
   } 
 
   async function search(e){
     e.preventDefault() // do not refresh page
     let searchTerm = term.term
-    console.log('our term', searchTerm)
+    
+    fetch(`http://localhost:3001/lyricssearch/${searchTerm}`).then(res => {
+      if(res.ok){
+        return res.json()
+      }
+    })
+    .then(data => {
+      setStart(true)
+      setSongs(data.data)   
+    })
+    .catch(err => console.log(err))
 
-    let res = await fetch(`https://api.lyrics.ovh/suggest/${searchTerm}`)
-    let data = await res.json()
-    setSongs(data.data)
-    console.log(songs)
     setTerm(() => { // term is empty again
       return (
         {
@@ -51,8 +57,9 @@ const Lyrics = () => {
       </form>
       
       <h3>API Results</h3>
+      {!start && <p style={{color: 'purple'}}>Search for lyrics...</p> }
       {
-        songs.length === 0 ? 
+        songs.length === 0 && start === true? 
         <p style={{color: 'red'}}>No results...</p> 
         :
         songs.map(

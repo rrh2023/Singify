@@ -1,5 +1,4 @@
 import React, {useState} from 'react'
-import LyricFragment from './html/LyricFragment'
 
 const SongLyrics = (props) => {
     const [showLyrics, setShowLyrics]= useState(false)
@@ -8,15 +7,21 @@ const SongLyrics = (props) => {
     })
 
     async function getLyrics(artist, songTitle) {
-        console.log("running")
-        const res = await fetch(`https://api.lyrics.ovh/v1/${artist}/${songTitle}`);
-        const data = await res.json();
-        // const lyrics = data.lyrics.replace(/(\r\n|\r|\n)/g, '<br>');
-        setLyrics(() => {
-            return ({
-                text: data.lyrics
-            })
-        })
+
+        await fetch(`http://localhost:3001/getlyrics/${artist}/${songTitle}`).then(res => {
+            if(res.ok){
+              return res.json()
+            }
+          })
+          .then(data => {
+            setLyrics(() => {
+                return ({
+                    text: data.lyrics
+                })
+            })  
+          })
+          .catch(err => console.log(err))
+            
     }
 
     
