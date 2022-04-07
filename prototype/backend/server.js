@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 })
 
 app.get("/lyricssearch/:searchterm", (req, res) => {
-    let searchTerm = req.params.searchterm
+    let searchTerm = req.params.searchterm // drake
 
     request(`https://api.lyrics.ovh/suggest/${searchTerm}`, function (error, response, body) {
         if (!error && response.statusCode == 200) {

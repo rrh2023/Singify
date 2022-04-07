@@ -32,19 +32,19 @@ const SongLyrics = (props) => {
         <h6>{props.songTitle}</h6>
 
         { showLyrics === false ?
-            <button onClick={() => {
-                setShowLyrics(!showLyrics)
-                getLyrics(props.artist, props.songTitle)
-                }}>
-                Show Lyrics
+        <button onClick={() => {
+            setShowLyrics(!showLyrics)
+            getLyrics(props.artist, props.songTitle)
+            }}>
+            Show Lyrics
+        </button>
+        :
+        <div>
+            <button onClick={() => {setShowLyrics(!showLyrics)}}>
+                Hide Lyrics
             </button>
-            :
-            <div>
-                <button onClick={() => {setShowLyrics(!showLyrics)}}>
-                    Hide Lyrics
-                </button>
-                <span>{lyrics.text}</span>
-            </div>
+            <span>{lyrics.text}</span>
+        </div>
         }
     </div>
       
