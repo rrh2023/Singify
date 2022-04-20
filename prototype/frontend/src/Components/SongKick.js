@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Events = () => {
+const SpeechRecognition = () => {
   return (
-    <h1>I'm the SongKick page!</h1>
+    <h1>I'm the Song Kick page!</h1>
   )
 }
 
-export default Events
+export default SpeechRecognition

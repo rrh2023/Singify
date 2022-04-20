@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 // const mongoUri = "some url"
 // mongoose.connect(mongoUri)
 
-app.get("/", (req, res) => {
-    res.send("Hello World!")
+app.get('/', (req, res) => {
+    
 })
 
 app.get("/lyricssearch/:searchterm", (req, res) => {

@@ -1,11 +1,13 @@
 import './App.css';
 import {Routes, Route} from "react-router-dom";
-import Navbar from './Components/Navbar'
+import Navbar from './Components/fragments/Navbar'
 import Home from './Components/Home'
 import Spotify from './Components/Spotify'
 import SongKick from './Components/SongKick'
 import Lyrics from './Components/Lyrics'
 import SpeechRecognition from './Components/SpeechRecognition'
+import Auth from './Components/Auth'
+
 
 
 
@@ -19,6 +21,7 @@ function App() {
         <Route exact path="/speechrecognition" element={<SpeechRecognition/>}/>
         <Route exact path="/songkick" element={<SongKick/>}/>
         <Route exact path="/lyrics" element={<Lyrics/>}/>
+        <Route exact path="/auth" element={<Auth/>}/>
       </Routes>
     </div>
   );
