@@ -21,19 +21,19 @@ const Events = () => {
 
   const handleListen = () => { // runs everytime isListening alters
     if (isListening) {
+      mic.start()
       mic.onstart = () => {
         console.log('Mic is on')
       }
-      mic.start()
-      // mic.onend = () => {
-      //   console.log('continuing..')
-      //   mic.start()
-      // }
+     
+      mic.onend = () => {
+        console.log('continuing..')
+        mic.start()
+      }
     } else {
       mic.stop()
       mic.onend = () => {
         console.log('Mic is off')
-
       }
     }
   
