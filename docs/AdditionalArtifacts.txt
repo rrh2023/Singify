@@ -1,0 +1,14 @@
+1) Number of outside of discussion meetings: 5
+
+2) Plans for next version: 
+
+
+3) Structure of your Source Repository: 
+Our repo contains primarily 3 parts: docs, prototype, and README. 
+We structured it in such a way in order for someone to navigate the
+repo as best as possible. The 'docs' folder contains all of our
+deliverables and team assignments. Prototypes contain a decoupled 
+storage of our project -- backend & frontend, folders that contain code
+for each respective part of the application. Finally, our README provides
+an introduction to our project.
+
