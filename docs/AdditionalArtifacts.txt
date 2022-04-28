@@ -1,6 +1,12 @@
-1) Number of outside of discussion meetings: 5
+1) Number of outside of discussion meetings: 
+5
 
 2) Plans for next version: 
+We would ideally like the project to consist of all of the
+functionalities that we had detailed in our original proposals.
+These include showing related songs, playing a song etc.
+There was quite a bit of a learning curve in terms of our technical skills
+and it turns out our original goals were a bit too ambitious. 
 
 
 3) Structure of your Source Repository: 
