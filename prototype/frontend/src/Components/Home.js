@@ -1,8 +1,12 @@
 import React from 'react'
+import SR from './SpeechRecognition'
 
-const Homepage = () => {
+const Homepage = ({auth}) => {
   return (
-    <h1>I'm the homepage!</h1>
+    <div>
+        <h1>I'm the homepage!</h1>
+        <SR auth={auth}/> 
+    </div>
   )
 }
 

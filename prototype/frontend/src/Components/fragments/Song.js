@@ -1,10 +1,26 @@
-import React, {useState} from 'react'
+import axios from 'axios'
+import React, {useState, useEffect} from 'react'
 
-const SongLyrics = (props) => {
+const Song = (props) => {
     const [showLyrics, setShowLyrics]= useState(false)
     const [lyrics, setLyrics]  = useState({
         text: ''
     })
+    const [isFavorite, setIsFavorite] = useState(false)
+
+    useEffect( () => {
+        fetch(`http://localhost:3001/checkIfFavorite/${props.artist}/${props.songTitle}`).then(res => {
+            if(res.ok){
+                return res.json()
+            }
+            }).then(res => {
+                console.log(res)
+                setIsFavorite(res.favorited)  
+            })
+            .catch(err => console.log(err))
+    }, [])
+
+    
 
     async function getLyrics(artist, songTitle) {
 
@@ -21,10 +37,12 @@ const SongLyrics = (props) => {
             })  
           })
           .catch(err => console.log(err))
-            
     }
 
-    
+    async function favoriteSong(){
+        axios.post(`http://localhost:3001/favorite/${props.artist}/${props.songTitle}`)
+        setIsFavorite(true)
+    }
 
   return (
     <div>
@@ -46,9 +64,13 @@ const SongLyrics = (props) => {
             <span>{lyrics.text}</span>
         </div>
         }
+        {isFavorite===false && props.auth && <button onClick={favoriteSong}>Favorite</button>}
+        {isFavorite && <span style={{color: "red"}}> &hearts; </span>}
+        
+       
     </div>
       
     )
 }
 
-export default SongLyrics
+export default Song
