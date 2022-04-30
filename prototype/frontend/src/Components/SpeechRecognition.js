@@ -100,7 +100,7 @@ const Events = ({auth}) => {
 
  
   return (
-    <div>
+    <div className='search_bar'>
           {
           isListening ? 
           <>
@@ -125,9 +125,9 @@ const Events = ({auth}) => {
         {
           isListening
           ?
-            <input type="text" name="" id="" value={speech.text}/>
+            <input className='input1' type="text" name="" id="" value={speech.text}/>
         :
-          <input type="text" name="text" id="" value={speech.text} onChange={handleType}/>
+          <input className='input1' type="text" name="text" id="" value={speech.text} onChange={handleType}/>
         }
         <button onClick={search}>Search</button>
           <button onClick={() => {
