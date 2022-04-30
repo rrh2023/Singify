@@ -34,29 +34,25 @@ function App() {
 
   return (
     <div className="App">
-      <nav>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
+      <nav className="navbar" style={{backgroundColor: "rgb(175, 86, 219)"}}>
+        
+        <div className="nav-item">
+          <Link  to="/">Home</Link>
+        </div>
         {
           !auth ?
-          <li>
+          <div className="nav-item">
               <a href="http://localhost:3001/login">Login</a>
-          </li>
+          </div>
       :
-      <>
-          <li>
-            <Link to="/favs">Favorite Songs</Link>
-          </li>
-          <li>
-            <Link to="/spotifyartists">Followed Spotify Artists</Link>
-          </li>
-          <li>
-            <a href="" onClick={logout}>Logout</a>
-          </li>
+        <>
+        <div className="nav-item"><Link className="nav-item" to="/favs">Favorite Songs</Link></div>
+        <div className="nav-item"><Link className="nav-item" to="/spotifyartists">Followed Spotify Artists</Link></div>
+        <div className="nav-item">
+          <a href="#" onClick={logout}>Logout</a>
+        </div>
         </>
           }
-       
       </nav>
 
       <Routes>
