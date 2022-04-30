@@ -1,0 +1,17 @@
+Story 1
+We decided that requiring registration was too restrictive. However, users can still login via OAuth using their Spotify account.
+
+Story 2
+We decided that it was too restrictive to limit searching to only registered users. Many services such as Shazam don't explicitly require a visitor to register themselves before using their service. However, registering enhances the user experience. We also decided against have a drop down toggle to switch among the search types. We decided that this would primarily be an artist and song look up. Artists, song titles, song lyrics, and events are all interconnected; we decided knowing the artist or song is sufficient and that we should present the options to look at each of these segments for every given response. The ability to clear your search query is also nice because voice recognition functionality may not necessarily be correct and you may want to retry.
+
+Story 3
+Removed playback requirement: We decided that song playback would not be something that we should work on for now because there are already many services that provide this functionality. However, if we were to implement it in the future, we would tie it into another API such as the Spotify API we currently use.
+
+Story 4
+Removed playback requirement: We have decided not to move forward with the song playback functionality, so the favorites folder will not have the buttons next to songs for this feature.
+
+Story 5
+Removed socialization functionality: Ultimately, we don't intend for this to be a social media platform. We think perhaps adding sharing functionalities through other platforms would be viable, but have not added the functionalities as it would require more authentications.
+
+Story 6
+Removed feedback requirement: We have decided not to include a section for feedback. Ultimately, this is not a paid service, and so there is no pressing need to have such a section. It would be more important if we charged users money so that they have an avenue to contact customer service. A feedback page would be something to add in the future for improvements.
