@@ -5,6 +5,9 @@ import  { Route, Navigate } from 'react-router-dom'
 const Favs = ({auth}) => {
   const [songs, setSongs] = useState([])
   useEffect(() => {
+    console.log(
+      'I AM AUTHORIZED'
+    )
     if(auth){
       async function favSongData(){
         await fetch('http://localhost:3001/favsongs')
