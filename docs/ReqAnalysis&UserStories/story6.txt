@@ -2,3 +2,9 @@ Providing feedback
 As a user, I want to be able to provide feedback and make complaints regarding any bugs I encounter while using the app in order to improve my user experience.
 Through using this web application (see user “registering”, “socializing”, “favoriting”, and “searching” stories), users may find out that something works in an unexpected way. Users will be able to locate an easily identifiable support section to lodge complaints. By filling in a form, users can report a problem and get the best support possible based on the category of problems they select from. There is an option to provide feedback and get support. Support can be with regards to user account information, such as recovering a lost account. 
 The unhappy path is if a user is unable to send out the feedback form due to server issues. Moreover, this may also occur if a user’s concerns are not properly addressed. In these cases, users can get in touch with us through the email address located at the footer of the website. Certain complaints may require customer service to engage with the user, and this should happen promptly. Holistic complaints such as improvements to the application should also be properly addressed so that users know that the engineering department is taking user feedback into account when designing new features.
+
+Update
+Removed feedback requirement.
+
+Reason for revision:
+We have decided not to include a section for feedback. Ultimately, this is not a paid service, and so there is no pressing need to have such a section. It would be more important if we charged users money so that they have an avenue to contact customer service. A feedback page would be something to add in the future for improvements.
