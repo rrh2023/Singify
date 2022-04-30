@@ -4,3 +4,9 @@ The main purpose of adding a favorites feature is that users can keep the songs 
 By adding a song to favorites, they will be added to a folder called favorites folder which keeps all the songs the user added to favorites, in the order of the date it was added. The user can play the songs from this playlist, play the entire playlist, unfavorite the song which will remove the song from the favorites. 
 It is easy to use and a very popular/preferred feature for user’s as it keeps their favorite songs at one place and provides them easy access to it. They can even edit the list to keep up with their changing preferences and trends.
 The unhappy path is that if users click on the favorite button but nothing appears in the favorites folder, then users can refresh the page to see if things change. If refreshing still can’t fix the problem, then please provide us feedback (see user “providing feedback” story).
+
+Update
+As a user I would like to favorite songs that I like so that I can keep track of them. They will be stored in the favorite songs folder. Users cannot play back songs.
+
+Reason for revision:
+We have decided not to move forward with the song playback functionality, so the favorites folder will not have the buttons next to songs for this feature.

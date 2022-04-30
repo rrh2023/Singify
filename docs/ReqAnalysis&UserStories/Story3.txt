@@ -1,3 +1,9 @@
 Playing song
 	As a user, I would like to play a song in order to enjoy the song. If users search a song, after being redirected to a new page (see user “searching” story), they will find a picture from the album (where the song belongs) as well as a button underneath to play the song. By clicking on the button, users will be able to listen to the song they selected on the previous page. 
 	The unhappy path is that it is possible that the song I am playing no longer exists or that the API call generates internal errors, and the song is unplayable. Then, a message will appear stating that “this song is unplayable, please try another song.”
+
+Update
+Removed user story.
+
+Reason for revision:
+We decided that song playback would not be something that we should work on for now because there are already many services that provide this functionality. However, if we were to implement it in the future, we would tie it into another API such as the Spotify API we currently use.
