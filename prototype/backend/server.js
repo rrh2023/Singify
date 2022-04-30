@@ -151,6 +151,8 @@ app.get('/favsongs', async function(req, res){
 })
 
 app.get('/getUsersArtists', function(req, res){
+    console.log('getting user artists')
+    console.log("MY FOLLOWED ARTISTS", usersArtists)
     res.send(usersArtists)
 })
 
