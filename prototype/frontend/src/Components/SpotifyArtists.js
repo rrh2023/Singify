@@ -28,16 +28,26 @@ const SpotifyFavs = ({auth}) => {
 
 
   return (
-    <>
+    <div className='followed_artist'>
+      <div className='inner'>
       <h1>Artists You Follow</h1>
-      <div>
+      <div style={{width: '100%'}}>
+      <h4 style={{float:'left', width:'20%'}}>ARTISTS</h4>
+      <h4 style={{float:'left', width:'60%'}}>EVENTS</h4>
+      </div>
+      <div style={{clear:'both'}}>
+        <hr></hr>
+      
+        
         {
           artists.map(artist => {
             return <ArtistPage key={artist.id} artist={artist}/>
           })
         }
+        
       </div>
-    </>
+      </div>
+    </div>
     
   )
 }

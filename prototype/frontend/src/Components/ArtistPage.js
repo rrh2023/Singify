@@ -28,15 +28,20 @@ const getEvents = async (artist_name) => {
     }
 
   return (
-    <div>
-        <h4>{artist.name}</h4>
+    <div className='each_artist'>
+      
+        
+        <h4 className='artist_name'>{artist.name}</h4>
         {show
             ?
-                <button onClick={closeEvents}>Close Events</button>
+                <button className='event_button' onClick={closeEvents}>Close Events</button>
             :
-            <button onClick={() => getEvents(artist.name)}>Show Events</button>
+            <button className='event_button' onClick={() => getEvents(artist.name)}>Show Events</button>
         }
+        <div className='event_page'>
         {show && <EventPage events={events.event}/>}
+        </div>
+      
     </div>
   )
 }

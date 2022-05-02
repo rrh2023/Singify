@@ -14,17 +14,17 @@ li{
     display: inline;
     list-style-type: none;
     padding: 4vw;
-    font-size: calc(5px + 1.3vw);
  
 }
 a{
     color: white;
     text-decoration:none;
- 
+    font-size: calc(5px + 1vw);
 }
  
 a:hover{
-    color: rgba(0,251,255,1);
+    color: #FCCB1A;
+    text-decoration: underline;
 }
  
 .header{
@@ -64,3 +64,115 @@ body{
     padding: 0.6vw 8vw 0.6vw 8vw;
     border-radius: 25px;
   }
+
+
+  .followed_artist{
+    background-image: url("../images/pic1.jpg");
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5vw 0 5vw 0;
+
+  }
+
+  .inner{
+      background-color: hsla(0, 0%, 0%,0.82);
+      width: 70%;
+      color: white;
+      padding: 7vw;
+      border-radius: 2vw;
+  }
+  
+  .each_artist{
+      text-align: left;
+    
+  }
+  .artist_name{
+      width: 40%;
+      float:left;
+  }
+  .event_page{
+      clear: both;
+  }
+
+
+ h1{
+     font-size: 3vw;
+ }
+
+ h4{
+     padding-top: 3vw;
+     font-size: 2vw;
+     
+ }
+ h5{
+     color: #FFEBC1;
+     display: inline;
+ }
+
+.event_button{
+    margin-top: 2vw;
+    border: solid 3px white;
+    background-color: transparent;
+    padding: 1vw 0.8vw 1vw 0.8vw;
+    color: white;
+    float:left;
+    width: 40%;
+}
+
+.event_button:hover{
+    background-color: #FCCB1A;
+    color: black;
+    border-color:hsla(0, 0%, 0%,0.82);
+}
+
+.each_event{
+    padding-top: 2vw;
+    font-size: calc(5px + 1vw);
+}
+.each_artist{
+    padding-top: 5vw;
+}
+
+p{
+    font-size: calc(5px + 1vw);
+}
+
+.no_tour{
+    padding-top: 2vw;
+}
+
+.favorite_song{
+    background-image: url("../images/pic1.jpg");
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 5vw 0 8vw 0;
+   
+}
+
+.favorite_song .inner{
+      background-color: hsla(0, 0%, 0%,0.82);
+      width: 70%;
+      color: white;
+      padding: 5vw 3vw 20vw 3vw;
+      border-radius: 2vw;
+  
+}
+
+p.artist_name{
+    font-size: calc(5px + 1.3vw);
+    width: 65%;
+}
+
+.favorite_song .event_button{
+    margin-top: 0;
+    padding: 1vw 0.2vw 1vw 0.2vw;
+    float: left;
+    width: 15%;
+}
+
+.favorite_song .each_artist{
+    text-align: center;
+
+}

@@ -34,16 +34,18 @@ const Favs = ({auth}) => {
   }
 
   return (
-    <div>
+    <div className='favorite_song'>
+      <div className='inner'>
       <h1>Favorite Songs</h1>
       {
         songs.map(song => {
-          return <div key={song._id}>
-            <p>{song.artist} - {song.songTitle}</p>
-            <button onClick={() => deleteSong(song._id)}>Delete</button> 
+          return <div style={{marginTop:'3vw'}} className='each_artist' key={song._id}>
+            <p className='artist_name'>{song.artist} - {song.songTitle}</p>
+            <button className='event_button' onClick={() => deleteSong(song._id)}>Delete</button> 
           </div>
         })
       }
+      </div>
     </div>
     
   )

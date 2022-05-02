@@ -37,19 +37,19 @@ function App() {
       <nav className="navbar">
         
         <div>
-          <Link to="/">Home</Link>
+          <Link to="/" style={{textDecoration:'none'}}>Home</Link>
         </div>
         {
           !auth ?
           <div>
-              <a href="http://localhost:3001/login">Login</a>
+              <a style={{textDecoration:'none'}} href="http://localhost:3001/login">Login</a>
           </div>
       :
         <>
-        <div><Link to="/favs">Favorite Songs</Link></div>
-        <div><Link to="/spotifyartists">Followed Spotify Artists</Link></div>
+        <div><Link to="/favs" style={{textDecoration:'none'}}>Favorite Songs</Link></div>
+        <div><Link to="/spotifyartists" style={{textDecoration:'none'}}>Followed Spotify Artists</Link></div>
         <div>
-          <a href="#" onClick={logout}>Logout</a>
+          <a  style={{textDecoration:'none'}} href="#" onClick={logout}>Logout</a>
         </div>
         </>
           }
