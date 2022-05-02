@@ -15,3 +15,6 @@ Removed socialization functionality: Ultimately, we don't intend for this to be 
 
 Story 6
 Removed feedback requirement: We have decided not to include a section for feedback. Ultimately, this is not a paid service, and so there is no pressing need to have such a section. It would be more important if we charged users money so that they have an avenue to contact customer service. A feedback page would be something to add in the future for improvements.
+
+Story 7
+Added artist event functionality: We decided that we should allow users to see what events the artists they follow are hosting. This is because users can favorite songs, but we also have a list of their favorite artists imported from Spotify; these artists can be used to discover upcoming events.
