@@ -1,1 +1,6 @@
+Update
+Events finder
+As a user, I would like to know about upcoming events featuring my favorite artists. I would like to be able to display the events for the artists that I want to find a description of the event and a link giving more details so that I can decide whether the event is something I'd be interested in.
 
+Reason for revision:
+We believe that users would want to know more about what is happening with the artists they like. Since we utilize Spotify to authenticate users, we tie their favorite artists list to finding events.
