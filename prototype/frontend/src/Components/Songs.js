@@ -7,10 +7,10 @@ const Songs = ({start, songs, auth}) => {
 
 
   return (
-    <div>
+    <div className='search_result'>
       
-      <h3>API Results</h3>
-      {!start && <p style={{color: 'purple'}}>Search for lyrics...</p> }
+      <h3 className='results'>API Results</h3>
+      {!start && <p className='lyrics' style={{color: 'black'}}>Search for lyrics...</p> }
       {
         songs.length === 0 && start === true? 
         <p style={{color: 'red'}}>No results...</p> 
