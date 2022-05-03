@@ -45,9 +45,9 @@ const Song = (props) => {
     }
 
   return (
-    <div>
-        <h6>{props.artist}</h6>
-        <h6>{props.songTitle}</h6>
+    <div className='artist'>
+        <h6 className='art1'>{props.artist}</h6>
+        <h6 className='art2'>{props.songTitle}</h6>
 
         { showLyrics === false ?
         <button onClick={() => {
