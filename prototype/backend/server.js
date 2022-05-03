@@ -124,6 +124,7 @@ app.get('/checkAuth', function(req, res){
 
 app.get('/checkIfFavorite/:artist/:songTitle', async function(req, res){
     const check = await favSong.findOne({ artist: req.params.artist, songTitle: req.params.songTitle, user: curSpotifyUser.id}).exec()
+    console.log("result:", check)
     if(check){
         console.log("user saved song")
         res.send({favorited: true})
