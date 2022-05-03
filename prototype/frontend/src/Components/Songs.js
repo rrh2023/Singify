@@ -9,8 +9,7 @@ const Songs = ({start, songs, auth}) => {
   return (
     <div className='search_result'>
       
-      <h3 className='results'>API Results</h3>
-      {!start && <p className='lyrics' style={{color: 'black'}}>Search for lyrics...</p> }
+      {!start && <h3 className='lyrics' style={{color: 'black'}}>Search for an artist, band, or song...</h3> }
       {
         songs.length === 0 && start === true? 
         <p style={{color: 'red'}}>No results...</p> 
