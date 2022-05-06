@@ -8,8 +8,6 @@
 # testing
 /coverage
 
-# config
-/secrets.config
 
 # production
 /build
@@ -20,6 +18,7 @@
 .env.development.local
 .env.test.local
 .env.production.local
+keys.js
 
 npm-debug.log*
 yarn-debug.log*

@@ -6,27 +6,20 @@ const mongoose = require('mongoose')
 const User = require("./models/userModel")
 const favSong = require("./models/favSongModel")
 
+// include keys & secrets
+const {client_id, client_secret, redirect_uri, apiKey, mongoPassword} = require("./keys.js")
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // connect to mongoDB (database)
-const password = 'BUschool2019!'
-const mongoUri = `mongodb+srv://rrh2023:${password}@cluster0.gkv7t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
+const mongoUri = `mongodb+srv://rrh2023:${mongoPassword}@cluster0.gkv7t.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`
 mongoose.connect(mongoUri)
 
-// SPOTIFY credentials & keys
-const client_id = '421d3f00ef88487eb92384f8769b774d'
-const client_secret = '7f39c77529cf41268267315e0b91a533'; 
-const redirect_uri = "http://localhost:3001/callback"
 let token = "" // access_token
 let curSpotifyUser = {} // cur user
 let usersArtists = {}
-
-// SONGKICK credentials & keys
-const apiKey = "mWRoQl15IV9rbTBc"
- 
 
 // Spotify API Calls
 app.get('/login', function(req, res) {
