@@ -1,5 +1,4 @@
-# CS411 Semester Project
-
+# Singify
 All details below about the project are tentative until the final submission at the end of the semester
 
 ## Members
