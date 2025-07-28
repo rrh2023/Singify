@@ -1,5 +1,5 @@
 # Singify
-All details below about the project are tentative until the final submission at the end of the semester
+Developed a full-stack app with other CS students where users are able to retrieve lyrics of their favorite songs using the Spotify, SongKick, & Lyrics.ovh APIs. 
 
 ## Members
 
