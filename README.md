@@ -18,9 +18,9 @@ Developed a full-stack app with other CS students where users are able to retrie
 
 ## APIs
 
-- Spotify
-- SongKick
-- Lyrics.ovh
+- [Spotify](https://developer.spotify.com/documentation/web-api)
+- [SongKick](https://www.songkick.com/developer/getting-started)
+- [Lyrics.ovh](https://lyricsovh.docs.apiary.io/#)
 - Speech Recognition
 
 ## External Resources
